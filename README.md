@@ -1,7 +1,7 @@
 # django-class-based-view
 ### Django Class Based view
 **Class-based views** are favorite feature of [Django](https://docs.djangoproject.com/),The key principles of class based view are organized and beautiful code design: don’t repeat yourself (stay **DRY**).
-Whenever we see a class-based view inside a urls.py url definition, you will usually see MyView.as_view().  as_view  method does all the heavy lifting of converting your Class into a callable that the url system understands.  
+Whenever we see a class-based view inside a urls.py url definition, we usually see MyView.as_view().  Here __as_view__ class method does all the heavy lifting of converting our Class into a callable that the url system understands.  
 **TemplateView** is a mixture of View and two mixins: __TemplateResponseMixin and ContextMixin__.
 **ContextMixin** is pretty straightforward. __ContextMixin__ defines single **method get_context_data**. This returns a dictionary. It is important to become familiar with __get_context_data__ as it is one of the methods we most frequently override. A common thing to remember when overriding this method is to not forget to make the __super__ call to collect all this context.
  
